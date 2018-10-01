@@ -1,8 +1,17 @@
-# Reflect-Utils
+package me.zyee.reflect;
 
-## Example
+import org.junit.Test;
 
-```java
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+/**
+ * @author yee
+ * @date 2018/10/1
+ */
 public class ReflectUtilsTest {
 
     @Test
@@ -48,5 +57,3 @@ public class ReflectUtilsTest {
         assertEquals(ReflectUtils.on(bean).invoke("toString").withoutArgs(), "TestBean{name='tomcat', age=100}");
     }
 }
-```
-
